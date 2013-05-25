@@ -1,0 +1,33 @@
+package stepslogger;
+
+option java_package = "org.campagnelab.stepslogger";
+
+message Log {
+    repeated Step steps = 1;
+}
+
+message Step {
+    required uint64 time_stamp = 1;
+
+    required string the_message = 2;
+
+    required bool error= 3;
+
+    optional int32 status_code = 4;
+
+    optional string command = 10;
+
+    optional string stdout = 20;
+
+    optional string stderr = 21;
+
+    repeated ObjectPayLoad observedObjects = 30;
+}
+
+message ObjectPayLoad {
+    required string object_name = 1;
+
+    optional string string_value = 2;
+
+
+}
