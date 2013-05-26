@@ -47,19 +47,19 @@ public class StepsReportBuilder {
 
                 for (int i = REPORT_K_BEFORE_ERROR; i >= 0; i--) {
 
-                    final int offset = stepInErrorIndex - i ;
+                    final int offset = stepInErrorIndex - i;
                     if (offset >= 0) {
                         int omittedSteps = offset - lastIndex;
                         if (omittedSteps > 0) {
                             stringBuffer.append(String.format("<omitting %d step%s>\n",
                                     omittedSteps,
-                                    omittedSteps>1?"s":""));
+                                    omittedSteps > 1 ? "s" : ""));
                         }
                         describe(log.getSteps(offset), stringBuffer);
                     }
                     lastIndex = stepInErrorIndex;
                 }
-                lastIndex+=1;
+                lastIndex += 1;
             }
 
             return "Error encountered: \n" + stringBuffer.toString();
@@ -75,6 +75,18 @@ public class StepsReportBuilder {
         if (step.hasStatusCode()) {
             writer.append(" Status=" + step.getStatusCode());
         }
+        if (step.hasCommand()) {
+            writer.append(" Command=" + step.getCommand());
+            writer.append("\n" +
+                    "-------  StdOut> ---------\n" + step.getStdout());
+            writer.append("------- <StdOut ---------\n");
+            writer.append("\n" +
+                    "-------  StdErr> ---------\n" +
+
+                   step.getStderr());
+            writer.append("\n"+"------- <StdErr ---------\n");
+
+        }
         writer.append("\n");
 
 
@@ -82,6 +94,7 @@ public class StepsReportBuilder {
 
     /**
      * Set the maximum number of steps that will be shown just before an error.
+     *
      * @param contextLength
      */
     public void setContextLength(int contextLength) {

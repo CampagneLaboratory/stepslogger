@@ -91,11 +91,12 @@ public class StepsWriter {
 
 
     public void append(RedirectStreams latestRedirect, int statusCode) {
-        latestStep.setStdout(latestRedirect.getStandardOutAsString());
-        latestStep.setStderr(latestRedirect.getStandardErrAsString());
-        latestStep.setStatusCode(statusCode);
-        append(latestStep);
-
+        if (latestStep != null) {
+            latestStep.setStdout(latestRedirect.getStandardOutAsString());
+            latestStep.setStderr(latestRedirect.getStandardErrAsString());
+            latestStep.setStatusCode(statusCode);
+            append(latestStep);
+        }
     }
 
     public void flush() {
@@ -110,4 +111,7 @@ public class StepsWriter {
         fos.close();
     }
 
+    public void appendStepProcess(String message, String command) {
+        latestStep=newStep(message).setCommand(command);
+    }
 }

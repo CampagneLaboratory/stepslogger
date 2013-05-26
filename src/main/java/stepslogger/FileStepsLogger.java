@@ -50,6 +50,7 @@ public class FileStepsLogger implements StepsLogger {
     @Override
     public RedirectStreams stepProcess(String message, String command) {
         latestRedirect = new RedirectStreams();
+        writer.appendStepProcess(message,command);
         return latestRedirect;
     }
 
