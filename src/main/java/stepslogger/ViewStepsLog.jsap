@@ -1,0 +1,36 @@
+<jsap>
+    <parameters>
+        <switch>
+            <id>help</id>
+            <shortFlag>h</shortFlag>
+            <longFlag>help</longFlag>
+            <help>Print help message.</help>
+        </switch>
+
+        <flaggedOption>
+            <id>log-file</id>
+            <stringParser>
+                <classname>FileStringParser</classname>
+                <properties>
+
+                    <property>
+                        <name>mustBeDirectory</name>
+                        <value>false</value>
+                    </property>
+                    <property>
+                        <name>mustExist</name>
+                        <value>true</value>
+                    </property>
+                </properties>
+            </stringParser>
+
+            <required>true</required>
+
+            <shortFlag>i</shortFlag>
+            <longFlag>log-file</longFlag>
+            <help>The log-file to visualize.</help>
+        </flaggedOption>
+
+
+    </parameters>
+</jsap>

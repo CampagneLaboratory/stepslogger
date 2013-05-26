@@ -77,14 +77,21 @@ public class StepsReportBuilder {
         }
         if (step.hasCommand()) {
             writer.append(" Command=" + step.getCommand());
-            writer.append("\n" +
-                    "-------  StdOut> ---------\n" + step.getStdout());
-            writer.append("------- <StdOut ---------\n");
-            writer.append("\n" +
-                    "-------  StdErr> ---------\n" +
-
-                   step.getStderr());
-            writer.append("\n"+"------- <StdErr ---------\n");
+            if (step.getStdout().length() > 0) {
+                writer.append("\n" +
+                        "-------  StdOut> ---------\n" + step.getStdout());
+                writer.append("------- <StdOut ---------\n");
+            } else {
+                writer.append(" (no StdOut)");
+            }
+            if (step.getStdout().length() > 0) {
+                writer.append("\n" +
+                        "-------  StdErr> ---------\n" +
+                        step.getStderr());
+                writer.append("------- <StdErr ---------\n");
+            } else {
+                writer.append(" (no StdErr)");
+            }
 
         }
         writer.append("\n");

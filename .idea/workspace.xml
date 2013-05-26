@@ -1,11 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ded8fffa-4925-4536-b73b-aaacf3e34797" name="Default" comment="Add ability to keep 1 maximum number of bytes for stdout and stderr. Use a circular array to discard older bytes.">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/stepslogger/util/CircularByteArrayOutputStream.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/stepslogger/FileStepsLogger.java" afterPath="$PROJECT_DIR$/src/main/java/stepslogger/FileStepsLogger.java" />
+    <list default="true" id="ded8fffa-4925-4536-b73b-aaacf3e34797" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_thoughtworks_xstream_xstream_1_4_4.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_9.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__xmlpull_xmlpull_1_1_3_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__xpp3_xpp3_min_1_1_4c.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/stepslogger/ViewStepsLog.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/stepslogger/ViewStepsLog.jsap" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_3_8_1.xml" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/stepslogger/FileStepsLoggerTest.java" afterPath="$PROJECT_DIR$/src/test/java/stepslogger/FileStepsLoggerTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/stepslogger/RedirectStreams.java" afterPath="$PROJECT_DIR$/src/main/java/stepslogger/RedirectStreams.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/stepslogger/StepsReportBuilder.java" afterPath="$PROJECT_DIR$/src/main/java/stepslogger/StepsReportBuilder.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="stepslogger.iws" />
@@ -13,18 +20,20 @@
     <file path="/pom.xml" changelist="ded8fffa-4925-4536-b73b-aaacf3e34797" time="1369498511523" ignored="false" />
     <file path="/App.java" changelist="ded8fffa-4925-4536-b73b-aaacf3e34797" time="1369490392427" ignored="false" />
     <file path="/StepLogger.java" changelist="ded8fffa-4925-4536-b73b-aaacf3e34797" time="1369491184788" ignored="false" />
-    <file path="/fragment.java" changelist="ded8fffa-4925-4536-b73b-aaacf3e34797" time="1369582687629" ignored="false" />
+    <file path="/fragment.java" changelist="ded8fffa-4925-4536-b73b-aaacf3e34797" time="1369586692753" ignored="false" />
     <file path="/StepsLogger.java" changelist="ded8fffa-4925-4536-b73b-aaacf3e34797" time="1369496451138" ignored="false" />
     <file path="/RedirectStreams.java" changelist="ded8fffa-4925-4536-b73b-aaacf3e34797" time="1369584689212" ignored="false" />
     <file path="/logformat.proto" changelist="ded8fffa-4925-4536-b73b-aaacf3e34797" time="1369492548530" ignored="false" />
     <file path="/StepsWriter.java" changelist="ded8fffa-4925-4536-b73b-aaacf3e34797" time="1369583660478" ignored="false" />
     <file path="$MAVEN_REPOSITORY$/org/campagnelab/gobyweb/serverside-dependencies/1.0.0/serverside-dependencies-1.0.0.pom" changelist="ded8fffa-4925-4536-b73b-aaacf3e34797" time="1369492435836" ignored="false" />
     <file path="/FileStepsLogger.java" changelist="ded8fffa-4925-4536-b73b-aaacf3e34797" time="1369584433522" ignored="false" />
-    <file path="/FileStepsLoggerTest.java" changelist="ded8fffa-4925-4536-b73b-aaacf3e34797" time="1369584454224" ignored="false" />
+    <file path="/FileStepsLoggerTest.java" changelist="ded8fffa-4925-4536-b73b-aaacf3e34797" time="1369586663375" ignored="false" />
     <file path="$PROJECT_DIR$/target/test-classes/log4j.properties" changelist="ded8fffa-4925-4536-b73b-aaacf3e34797" time="1369497053294" ignored="false" />
-    <file path="/StepsReportBuilder.java" changelist="ded8fffa-4925-4536-b73b-aaacf3e34797" time="1369583765863" ignored="false" />
+    <file path="/StepsReportBuilder.java" changelist="ded8fffa-4925-4536-b73b-aaacf3e34797" time="1369586608959" ignored="false" />
     <file path="/LogFormat.proto" changelist="ded8fffa-4925-4536-b73b-aaacf3e34797" time="1369498250562" ignored="false" />
-    <file path="/Dummy.txt" changelist="ded8fffa-4925-4536-b73b-aaacf3e34797" time="1369585332859" ignored="false" />
+    <file path="/Dummy.txt" changelist="ded8fffa-4925-4536-b73b-aaacf3e34797" time="1369586692753" ignored="false" />
+    <file path="/ViewStepsLog.java" changelist="ded8fffa-4925-4536-b73b-aaacf3e34797" time="1369585981243" ignored="false" />
+    <file path="/ViewStepLog.jsap" changelist="ded8fffa-4925-4536-b73b-aaacf3e34797" time="1369585796410" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,21 +101,6 @@
         <option name="CONDITION" value="" />
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/src/main/java/stepslogger/RedirectStreams.java" line="24" class="stepslogger.RedirectStreams" package="stepslogger">
-        <option name="ENABLED" value="true" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="REMOVE_AFTER_HIT" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="SUSPEND" value="true" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="true" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
-      </breakpoint>
       <breakpoint url="file://$PROJECT_DIR$/src/main/java/stepslogger/util/CircularByteArrayOutputStream.java" line="65" class="stepslogger.util.CircularByteArrayOutputStream" package="stepslogger.util">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
@@ -135,7 +129,7 @@
       <file leaf-file-name="StepsReportBuilder.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/stepslogger/StepsReportBuilder.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="31" column="0" selection-start="1180" selection-end="1180" vertical-scroll-proportion="0.0">
+            <state line="88" column="56" selection-start="3375" selection-end="3375" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="e#884#893#0" expanded="true" />
               </folding>
@@ -152,10 +146,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FileStepsLogger.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="FileStepsLogger.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/stepslogger/FileStepsLogger.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="53" column="22" selection-start="1622" selection-end="1622" vertical-scroll-proportion="0.0">
+            <state line="52" column="56" selection-start="1599" selection-end="1599" vertical-scroll-proportion="0.3760933">
               <folding />
             </state>
           </provider>
@@ -164,18 +158,7 @@
       <file leaf-file-name="RedirectStreams.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/stepslogger/RedirectStreams.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="0" selection-start="670" selection-end="670" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CircularByteArrayOutputStream.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/stepslogger/util/CircularByteArrayOutputStream.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="3" selection-start="837" selection-end="837" vertical-scroll-proportion="0.7376093">
+            <state line="29" column="20" selection-start="852" selection-end="852" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -186,7 +169,36 @@
       <file leaf-file-name="FileStepsLoggerTest.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/stepslogger/FileStepsLoggerTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="170" column="49" selection-start="6995" selection-end="6995" vertical-scroll-proportion="0.0">
+            <state line="169" column="37" selection-start="6829" selection-end="6829" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ViewStepsLog.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/stepslogger/ViewStepsLog.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="23" column="0" selection-start="510" selection-end="510" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="182" column="21" selection-start="7321" selection-end="7321" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ViewStepsLog.jsap" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/stepslogger/ViewStepsLog.jsap">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="6" column="23" selection-start="165" selection-end="165" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -219,22 +231,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/stepslogger/App.java" />
-        <option value="$PROJECT_DIR$/src/main/java/stepslogger/StepLogger.java" />
-        <option value="$PROJECT_DIR$/src/main/protobuf/logformat.proto" />
         <option value="$PROJECT_DIR$/target/generated-sources/org/campagnelab/stepslogger/Logformat.java" />
         <option value="$PROJECT_DIR$/src/main/java/stepslogger/StepsLogger.java" />
         <option value="$PROJECT_DIR$/src/test/resources/log4j.properties" />
         <option value="$PROJECT_DIR$/src/main/protobuf/LogFormat.proto" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/.idea/workspace.xml" />
         <option value="$PROJECT_DIR$/src/main/java/stepslogger/StepsWriter.java" />
-        <option value="$PROJECT_DIR$/src/main/java/stepslogger/StepsReportBuilder.java" />
         <option value="$PROJECT_DIR$/src/main/java/stepslogger/util/CircularByteOutputStream.java" />
         <option value="$PROJECT_DIR$/src/main/java/stepslogger/RedirectStreams.java" />
         <option value="$PROJECT_DIR$/src/main/java/stepslogger/FileStepsLogger.java" />
-        <option value="$PROJECT_DIR$/src/test/java/stepslogger/FileStepsLoggerTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/stepslogger/util/CircularByteArrayOutputStream.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ViewStepLog.jsap" />
+        <option value="$PROJECT_DIR$/src/main/java/stepslogger/ViewStepsLog.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/stepslogger/ViewStepsLog.jsap" />
+        <option value="$PROJECT_DIR$/src/main/java/stepslogger/StepsReportBuilder.java" />
+        <option value="$PROJECT_DIR$/src/test/java/stepslogger/FileStepsLoggerTest.java" />
       </list>
     </option>
   </component>
@@ -425,36 +437,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="stepslogger" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="util" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="stepslogger" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="stepslogger" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value=".idea" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -471,7 +453,7 @@
     <property name="OverrideImplement.combined" value="true" />
     <property name="recentsLimit" value="5" />
     <property name="MemberChooser.sorted" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/target/generated-sources" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/test-results/file-steps-logger/log-1369585297451.slog" />
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
@@ -484,11 +466,11 @@
     <property name="dynamic.classpath" value="false" />
   </component>
   <component name="RecentsManager">
-    <key name="CreateTestDialog.Recents.Supers">
-      <recent name="" />
-    </key>
     <key name="CreateTestDialog.RecentsKey">
       <recent name="stepslogger" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/test" />
@@ -500,8 +482,36 @@
     <key name="CreateClassDialog.RecentsKey">
       <recent name="stepslogger" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java/stepslogger" />
+    </key>
   </component>
   <component name="RunManager" selected="JUnit.FileStepsLoggerTest">
+    <configuration default="false" name="ViewStepsLog" type="Application" factoryName="Application" temporary="true">
+      <extension name="coverage" enabled="false" merge="false" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="stepslogger.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="stepslogger.ViewStepsLog" />
+      <option name="VM_PARAMETERS" value="" />
+      <option name="PROGRAM_PARAMETERS" value="-i $PROJECT_DIR$/test-results/file-steps-logger/log-1369585297451.slog" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" value="" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="stepslogger" />
+      <envs />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method>
+        <option name="Make" enabled="false" />
+        <option name="Maven.BeforeRunTask" enabled="true" file="$PROJECT_DIR$/pom.xml" goal="compile" />
+      </method>
+    </configuration>
     <configuration default="false" name="FileStepsLoggerTest.testStep" type="JUnit" factoryName="JUnit" temporary="true">
       <extension name="coverage" enabled="false" merge="false" runner="idea">
         <pattern>
@@ -569,6 +579,37 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration default="false" name="FileStepsLoggerTest.testProcessNoStdOut" type="JUnit" factoryName="JUnit" temporary="true">
+      <extension name="coverage" enabled="false" merge="false" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="stepslogger.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="stepslogger" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" value="" />
+      <option name="PACKAGE_NAME" value="stepslogger" />
+      <option name="MAIN_CLASS_NAME" value="stepslogger.FileStepsLoggerTest" />
+      <option name="METHOD_NAME" value="testProcessNoStdOut" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method>
+        <option name="Maven.BeforeRunTask" enabled="true" file="$PROJECT_DIR$/pom.xml" goal="test-compile" />
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="MavenRunConfiguration" factoryName="Maven">
       <MavenSettings>
         <option name="myGeneralSettings" />
@@ -614,18 +655,20 @@
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <extension name="coverage" enabled="false" merge="false" runner="idea" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="MAIN_CLASS_NAME" value="" />
+      <option name="VM_PARAMETERS" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ALTERNATIVE_JRE_PATH" value="" />
       <option name="ENABLE_SWING_INSPECTOR" value="false" />
       <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
       <module name="" />
       <envs />
-      <method />
+      <method>
+        <option name="Maven.BeforeRunTask" enabled="true" file="$PROJECT_DIR$/pom.xml" goal="compile" />
+      </method>
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <extension name="coverage" enabled="false" merge="false" runner="idea" />
@@ -688,15 +731,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <list size="3">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.FileStepsLoggerTest (1)" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.FileStepsLoggerTest.testStep" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.FileStepsLoggerTest" />
+    <list size="5">
+      <item index="0" class="java.lang.String" itemvalue="Application.ViewStepsLog" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.FileStepsLoggerTest (1)" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.FileStepsLoggerTest.testStep" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.FileStepsLoggerTest" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.FileStepsLoggerTest.testProcessNoStdOut" />
     </list>
     <recent_temporary>
-      <list size="2">
+      <list size="4">
         <item index="0" class="java.lang.String" itemvalue="JUnit.FileStepsLoggerTest" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.FileStepsLoggerTest.testStep" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.FileStepsLoggerTest.testProcessNoStdOut" />
+        <item index="2" class="java.lang.String" itemvalue="Application.ViewStepsLog" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.FileStepsLoggerTest.testStep" />
       </list>
     </recent_temporary>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
@@ -741,7 +788,11 @@
       <created>1369584211638</created>
       <updated>1369584211638</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Add ability to keep 1 maximum number of bytes for stdout and stderr. Use a circular array to discard older bytes.">
+      <created>1369585362137</created>
+      <updated>1369585362137</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -767,8 +818,8 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3294893" sideWeight="0.6712095" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24958813" sideWeight="0.6712095" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32879046" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24958813" sideWeight="0.6712095" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32879046" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -818,7 +869,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Support processes that produce stdout and stderr.&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add ability to keep 1 maximum number of bytes for stdout and stderr. Use a circular array to discard older bytes." />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -835,6 +886,7 @@
     <MESSAGE value="Initial project backbone." />
     <MESSAGE value="Summarize now handles several errors and omits intermediate steps not in context of errors." />
     <MESSAGE value="Support processes that produce stdout and stderr.&#10;" />
+    <MESSAGE value="Add ability to keep 1 maximum number of bytes for stdout and stderr. Use a circular array to discard older bytes." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -844,26 +896,9 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar:///System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/classes.jar!/java/util/logging/Logger.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="13" selection-start="160" selection-end="160" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bin/protoc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/resources/log4j.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="30" selection-start="30" selection-end="30" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="171" column="21" selection-start="6967" selection-end="6967" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
       </provider>
     </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/lib/junit-4.10.jar!/org/junit/runners/model/FrameworkMethod.class">
@@ -883,23 +918,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/stepslogger/StepsLogger.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="7" selection-start="640" selection-end="640" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/protobuf/LogFormat.proto">
       <provider selected="true" editor-type-id="text-editor">
         <state line="17" column="27" selection-start="298" selection-end="305" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/stepslogger/StepsWriter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="114" column="19" selection-start="3028" selection-end="3028" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -911,44 +932,81 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/stepslogger/StepsReportBuilder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="0" selection-start="1180" selection-end="1180" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#884#893#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/stepslogger/RedirectStreams.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="0" selection-start="670" selection-end="670" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/stepslogger/FileStepsLoggerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="170" column="49" selection-start="6995" selection-end="6995" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/stepslogger/FileStepsLogger.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="53" column="22" selection-start="1622" selection-end="1622" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/stepslogger/util/CircularByteArrayOutputStream.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="25" column="3" selection-start="837" selection-end="837" vertical-scroll-proportion="0.7376093">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/stepslogger/RedirectStreams.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="20" selection-start="852" selection-end="852" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="182" column="21" selection-start="7321" selection-end="7321" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/stepslogger/ViewStepsLog.jsap">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="23" selection-start="165" selection-end="165" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/stepslogger/StepsLogger.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="7" selection-start="640" selection-end="640" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/stepslogger/StepsWriter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="114" column="19" selection-start="3028" selection-end="3028" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/stepslogger/ViewStepsLog.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="0" selection-start="510" selection-end="510" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/stepslogger/StepsReportBuilder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="88" column="56" selection-start="3375" selection-end="3375" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#884#893#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/stepslogger/FileStepsLoggerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="169" column="37" selection-start="6829" selection-end="6829" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/stepslogger/FileStepsLogger.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="52" column="56" selection-start="1599" selection-end="1599" vertical-scroll-proportion="0.3760933">
+          <folding />
         </state>
       </provider>
     </entry>
