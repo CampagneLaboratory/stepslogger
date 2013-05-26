@@ -50,13 +50,18 @@ public class StepsLogTool {
     }
 
     private static boolean hasError(JSAPResult config) {
-        return !(config.userSpecified("log-file"));
+        boolean OK = config.userSpecified("log-file");
+        final String action = config.getString("action");
+        OK &= "view".equals(action); //|| "log".equals(action);
+        return !OK;
     }
 
     private void process(JSAPResult config, File logFile) throws IOException {
         StepsReportBuilder reporter = new StepsReportBuilder(logFile);
         reporter.setShowTime(true);
-        System.out.println(reporter.summarize());
-
+        final String action = config.getString("action");
+        if ("view".equals(action)) {
+            System.out.println(reporter.summarize());
+        }
     }
 }
