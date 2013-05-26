@@ -16,6 +16,13 @@ public interface StepsLogger {
     public void step(String message);
 
     /**
+     * Record that a step could not be performed.
+     *
+     * @param message
+     */
+    public void error(String message);
+
+    /**
      * Record the execution of a process, with standard out and standard error.  Call this method
      * before executing a process. Write to the redirect streams to record stdout or stderr of the process.
      *
@@ -25,6 +32,7 @@ public interface StepsLogger {
 
     /**
      * Call this method after a process finished. You must have called stepProcess before starting the process.
+     *
      * @param statusCode
      */
     public void processReturned(int statusCode);

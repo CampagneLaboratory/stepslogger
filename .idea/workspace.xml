@@ -2,33 +2,47 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ded8fffa-4925-4536-b73b-aaacf3e34797" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/campagnelab/stepslogger/StepsLogTool.java" afterPath="$PROJECT_DIR$/src/main/java/org/campagnelab/stepslogger/StepsLogTool.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/campagnelab/stepslogger/StepsLogTool.jsap" afterPath="$PROJECT_DIR$/src/main/java/org/campagnelab/stepslogger/StepsLogTool.jsap" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/org/campagnelab/stepslogger/SilentStepsLogger.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/campagnelab/stepslogger/FileStepsLogger.java" afterPath="$PROJECT_DIR$/src/main/java/org/campagnelab/stepslogger/FileStepsLogger.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/campagnelab/stepslogger/StepsLogger.java" afterPath="$PROJECT_DIR$/src/main/java/org/campagnelab/stepslogger/StepsLogger.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="stepslogger.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/pom.xml" changelist="ded8fffa-4925-4536-b73b-aaacf3e34797" time="1369587869186" ignored="false" />
+    <file path="/pom.xml" changelist="ded8fffa-4925-4536-b73b-aaacf3e34797" time="1369594319377" ignored="false" />
     <file path="/App.java" changelist="ded8fffa-4925-4536-b73b-aaacf3e34797" time="1369490392427" ignored="false" />
     <file path="/StepLogger.java" changelist="ded8fffa-4925-4536-b73b-aaacf3e34797" time="1369491184788" ignored="false" />
-    <file path="/fragment.java" changelist="ded8fffa-4925-4536-b73b-aaacf3e34797" time="1369586962901" ignored="false" />
-    <file path="/StepsLogger.java" changelist="ded8fffa-4925-4536-b73b-aaacf3e34797" time="1369496451138" ignored="false" />
+    <file path="/fragment.java" changelist="ded8fffa-4925-4536-b73b-aaacf3e34797" time="1369595071212" ignored="false" />
+    <file path="/StepsLogger.java" changelist="ded8fffa-4925-4536-b73b-aaacf3e34797" time="1369595734501" ignored="false" />
     <file path="/RedirectStreams.java" changelist="ded8fffa-4925-4536-b73b-aaacf3e34797" time="1369584689212" ignored="false" />
     <file path="/logformat.proto" changelist="ded8fffa-4925-4536-b73b-aaacf3e34797" time="1369492548530" ignored="false" />
     <file path="/StepsWriter.java" changelist="ded8fffa-4925-4536-b73b-aaacf3e34797" time="1369587266398" ignored="false" />
     <file path="$MAVEN_REPOSITORY$/org/campagnelab/gobyweb/serverside-dependencies/1.0.0/serverside-dependencies-1.0.0.pom" changelist="ded8fffa-4925-4536-b73b-aaacf3e34797" time="1369492435836" ignored="false" />
-    <file path="/FileStepsLogger.java" changelist="ded8fffa-4925-4536-b73b-aaacf3e34797" time="1369584433522" ignored="false" />
+    <file path="/FileStepsLogger.java" changelist="ded8fffa-4925-4536-b73b-aaacf3e34797" time="1369595761899" ignored="false" />
     <file path="/FileStepsLoggerTest.java" changelist="ded8fffa-4925-4536-b73b-aaacf3e34797" time="1369586663375" ignored="false" />
     <file path="$PROJECT_DIR$/target/test-classes/log4j.properties" changelist="ded8fffa-4925-4536-b73b-aaacf3e34797" time="1369497053294" ignored="false" />
     <file path="/StepsReportBuilder.java" changelist="ded8fffa-4925-4536-b73b-aaacf3e34797" time="1369589180174" ignored="false" />
     <file path="/LogFormat.proto" changelist="ded8fffa-4925-4536-b73b-aaacf3e34797" time="1369586992196" ignored="false" />
-    <file path="/Dummy.txt" changelist="ded8fffa-4925-4536-b73b-aaacf3e34797" time="1369589396169" ignored="false" />
+    <file path="/Dummy.txt" changelist="ded8fffa-4925-4536-b73b-aaacf3e34797" time="1369596347421" ignored="false" />
     <file path="/ViewStepsLog.java" changelist="ded8fffa-4925-4536-b73b-aaacf3e34797" time="1369594146518" ignored="false" />
     <file path="/ViewStepLog.jsap" changelist="ded8fffa-4925-4536-b73b-aaacf3e34797" time="1369585796410" ignored="false" />
     <file path="$PROJECT_DIR$/target/generated-sources/org/campagnelab/stepslogger/Logformat.java" changelist="ded8fffa-4925-4536-b73b-aaacf3e34797" time="1369586878344" ignored="false" />
-    <file path="/a.dummy" changelist="ded8fffa-4925-4536-b73b-aaacf3e34797" time="1369587283800" ignored="false" />
+    <file path="/a.dummy" changelist="ded8fffa-4925-4536-b73b-aaacf3e34797" time="1369595622415" ignored="false" />
     <file path="/StepsLogTool.jsap" changelist="ded8fffa-4925-4536-b73b-aaacf3e34797" time="1369593542096" ignored="false" />
     <file path="/StepsLogTool.java" changelist="ded8fffa-4925-4536-b73b-aaacf3e34797" time="1369593742979" ignored="false" />
+    <file path="$PROJECT_DIR$/../artifacts-2/pom.xml" changelist="ded8fffa-4925-4536-b73b-aaacf3e34797" time="1369594319377" ignored="false" />
+    <file path="$PROJECT_DIR$/../artifacts-2/src/main/java/org/campagnelab/gobyweb/artifacts/ArtifactManager.jsap" changelist="ded8fffa-4925-4536-b73b-aaacf3e34797" time="1369594505607" ignored="false" />
+    <file path="/ArtifactManager.jsap" changelist="ded8fffa-4925-4536-b73b-aaacf3e34797" time="1369594421440" ignored="false" />
+    <file path="$PROJECT_DIR$/../artifacts-2/src/main/java/org/campagnelab/gobyweb/artifacts/ArtifactManager.java" changelist="ded8fffa-4925-4536-b73b-aaacf3e34797" time="1369594516588" ignored="false" />
+    <file path="/ArtifactManager.java" changelist="ded8fffa-4925-4536-b73b-aaacf3e34797" time="1369594457655" ignored="false" />
+    <file path="$PROJECT_DIR$/../artifacts-2/src/main/java/org/campagnelab/gobyweb/artifacts/ArtifactRepo.java" changelist="ded8fffa-4925-4536-b73b-aaacf3e34797" time="1369595673731" ignored="false" />
+    <file path="/ArtifactRepo.java" changelist="ded8fffa-4925-4536-b73b-aaacf3e34797" time="1369595569939" ignored="false" />
+    <file path="$PROJECT_DIR$/../artifacts-2/target/generated-sources/org/campagnelab/gobyweb/artifacts/Artifacts.java" changelist="ded8fffa-4925-4536-b73b-aaacf3e34797" time="1369596469962" ignored="false" />
+    <file path="/SilentStepsLogger.java" changelist="ded8fffa-4925-4536-b73b-aaacf3e34797" time="1369595098781" ignored="false" />
+    <file path="/log4j.properties" changelist="ded8fffa-4925-4536-b73b-aaacf3e34797" time="1369595357966" ignored="false" />
+    <file path="$PROJECT_DIR$/../artifacts-2/src/test/resources/log4j.properties" changelist="ded8fffa-4925-4536-b73b-aaacf3e34797" time="1369595357563" ignored="false" />
+    <file path="$PROJECT_DIR$/../artifacts-2/src/main/java/org/campagnelab/gobyweb/artifacts/ArtifactRequestHelper.java" changelist="ded8fffa-4925-4536-b73b-aaacf3e34797" time="1369595935356" ignored="false" />
+    <file path="/ArtifactRequestHelper.java" changelist="ded8fffa-4925-4536-b73b-aaacf3e34797" time="1369595934798" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -133,15 +147,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="log_format.proto" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/protobuf/log_format.proto">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="23" selection-start="61" selection-end="61" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="StepsWriter.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/org/campagnelab/stepslogger/StepsWriter.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -153,10 +158,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FileStepsLogger.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="FileStepsLogger.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/org/campagnelab/stepslogger/FileStepsLogger.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="11" selection-start="452" selection-end="452" vertical-scroll-proportion="0.0">
+            <state line="42" column="18" selection-start="1276" selection-end="1276" vertical-scroll-proportion="0.45928338">
               <folding />
             </state>
           </provider>
@@ -182,10 +187,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="StepsLogTool.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="StepsLogTool.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/org/campagnelab/stepslogger/StepsLogTool.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="54" column="36" selection-start="1743" selection-end="1743" vertical-scroll-proportion="0.25655976">
+            <state line="54" column="36" selection-start="1743" selection-end="1743" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -205,7 +210,7 @@
       <file leaf-file-name="pom.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="153" column="26" selection-start="6502" selection-end="6502" vertical-scroll-proportion="0.0">
+            <state line="13" column="17" selection-start="580" selection-end="580" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -214,7 +219,7 @@
       <file leaf-file-name="StepsLogger.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/org/campagnelab/stepslogger/StepsLogger.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="7" selection-start="656" selection-end="656" vertical-scroll-proportion="0.0">
+            <state line="56" column="41" selection-start="1391" selection-end="1391" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -238,15 +243,12 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/stepslogger/RedirectStreams.java" />
-        <option value="$PROJECT_DIR$/src/main/java/stepslogger/FileStepsLogger.java" />
         <option value="$PROJECT_DIR$/src/main/java/stepslogger/util/CircularByteArrayOutputStream.java" />
         <option value="$PROJECT_DIR$/src/main/java/ViewStepLog.jsap" />
         <option value="$PROJECT_DIR$/src/main/java/stepslogger/ViewStepsLog.java" />
         <option value="$PROJECT_DIR$/src/main/java/stepslogger/ViewStepsLog.jsap" />
         <option value="$PROJECT_DIR$/src/main/java/stepslogger/StepsReportBuilder.java" />
         <option value="$PROJECT_DIR$/src/test/java/stepslogger/FileStepsLoggerTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/campagnelab/stepslogger/FileStepsLogger.java" />
         <option value="$PROJECT_DIR$/src/main/protobuf/LogFormat.proto" />
         <option value="$PROJECT_DIR$/src/main/java/org/campagnelab/stepslogger/StepsWriter.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
@@ -254,6 +256,9 @@
         <option value="$PROJECT_DIR$/src/main/java/org/campagnelab/stepslogger/ViewStepsLog.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/campagnelab/stepslogger/StepsLogTool.jsap" />
         <option value="$PROJECT_DIR$/src/main/java/org/campagnelab/stepslogger/StepsLogTool.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/campagnelab/stepslogger/StepsLogger.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/campagnelab/stepslogger/FileStepsLogger.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/campagnelab/stepslogger/SilentStepsLogger.java" />
       </list>
     </option>
   </component>
@@ -536,6 +541,7 @@
       <recent name="stepslogger" />
     </key>
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="org.campagnelab.stepslogger" />
       <recent name="stepslogger" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
@@ -859,7 +865,11 @@
       <created>1369589401416</created>
       <updated>1369589401416</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Add the action parameter.">
+      <created>1369594214130</created>
+      <updated>1369594214130</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -883,10 +893,10 @@
       <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24958813" sideWeight="0.6712095" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3294893" sideWeight="0.6712095" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3294893" sideWeight="0.6712095" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24958813" sideWeight="0.6712095" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24958813" sideWeight="0.6712095" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32879046" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -936,7 +946,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Rename package to org.campagnelab.stepslog.&#10;Print date the event occured on the command line." />
+    <option name="LAST_COMMIT_MESSAGE" value="Add the action parameter." />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -957,6 +967,7 @@
     <MESSAGE value="Do not print stdout or stderr when they are empty." />
     <MESSAGE value="Print date the event occured on the command line." />
     <MESSAGE value="Rename package to org.campagnelab.stepslog.&#10;Print date the event occured on the command line." />
+    <MESSAGE value="Add the action parameter." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -997,13 +1008,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/campagnelab/stepslogger/StepsLogger.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="7" selection-start="656" selection-end="656" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/protobuf/log_format.proto">
       <provider selected="true" editor-type-id="text-editor">
         <state line="2" column="23" selection-start="61" selection-end="61" vertical-scroll-proportion="0.0">
@@ -1029,13 +1033,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="153" column="26" selection-start="6502" selection-end="6502" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/org/campagnelab/stepslogger/FileStepsLoggerTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="158" column="33" selection-start="6243" selection-end="6243" vertical-scroll-proportion="0.0">
@@ -1053,13 +1050,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/campagnelab/stepslogger/FileStepsLogger.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="11" selection-start="452" selection-end="452" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/campagnelab/stepslogger/StepsLogTool.jsap">
       <provider selected="true" editor-type-id="text-editor">
         <state line="18" column="60" selection-start="665" selection-end="665" vertical-scroll-proportion="0.0">
@@ -1069,10 +1059,38 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/campagnelab/stepslogger/StepsLogTool.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="54" column="36" selection-start="1743" selection-end="1743" vertical-scroll-proportion="0.25655976">
+        <state line="54" column="36" selection-start="1743" selection-end="1743" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="17" selection-start="580" selection-end="580" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/campagnelab/stepslogger/SilentStepsLogger.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="0" selection-start="388" selection-end="388" vertical-scroll-proportion="0.7669903">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/campagnelab/stepslogger/StepsLogger.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="56" column="41" selection-start="1391" selection-end="1391" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/campagnelab/stepslogger/FileStepsLogger.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="42" column="18" selection-start="1276" selection-end="1276" vertical-scroll-proportion="0.45928338">
+          <folding />
         </state>
       </provider>
     </entry>

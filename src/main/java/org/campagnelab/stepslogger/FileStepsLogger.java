@@ -44,6 +44,11 @@ public class FileStepsLogger implements StepsLogger {
         writer.append(message);
     }
 
+    @Override
+    public void error(String message) {
+        step(message,1);
+    }
+
     RedirectStreams latestRedirect;
 
     public RedirectStreams stepProcess(String message, String command) {
