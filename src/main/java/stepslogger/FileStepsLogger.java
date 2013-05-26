@@ -76,9 +76,9 @@ public class FileStepsLogger implements StepsLogger {
      * @param statusCode
      */
     public void step(String message, int statusCode) {
-        if (statusCode != 0) {
-            writer.error(message, statusCode);
-        }
+
+            writer.append(message,statusCode);
+
     }
 
     @Override

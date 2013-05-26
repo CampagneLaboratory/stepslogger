@@ -77,7 +77,7 @@ public class StepsWriter {
     }
 
     public void append(String message, int statusCode) {
-        log.addSteps(newStep(message, statusCode));
+        append(newStep(message, statusCode));
     }
 
     public void observe(String name, String payLoad) {

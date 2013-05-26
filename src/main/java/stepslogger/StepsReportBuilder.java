@@ -19,10 +19,11 @@ import java.util.List;
  */
 public class StepsReportBuilder {
 
-    private static final int REPORT_K_BEFORE_ERROR = 5;
+    private int REPORT_K_BEFORE_ERROR = 5;
     private final Logformat.Log log;
     private boolean errorEncountered;
     private List<Integer> stepsInErrorIndices = new ArrayList<Integer>();
+    private int contextLength;
 
     public StepsReportBuilder(File logFile) throws IOException {
         assert logFile.isFile() : "directories are not supported at this time.";
@@ -46,7 +47,7 @@ public class StepsReportBuilder {
 
                 for (int i = REPORT_K_BEFORE_ERROR; i >= 0; i--) {
 
-                    final int offset = stepInErrorIndex - i;
+                    final int offset = stepInErrorIndex - i ;
                     if (offset >= 0) {
                         int omittedSteps = offset - lastIndex;
                         if (omittedSteps > 0) {
@@ -58,8 +59,9 @@ public class StepsReportBuilder {
                     }
                     lastIndex = stepInErrorIndex;
                 }
-
+                lastIndex+=1;
             }
+
             return "Error encountered: \n" + stringBuffer.toString();
         } else {
             return String.format("Success in %d steps", log.getStepsCount());
@@ -77,4 +79,13 @@ public class StepsReportBuilder {
 
 
     }
+
+    /**
+     * Set the maximum number of steps that will be shown just before an error.
+     * @param contextLength
+     */
+    public void setContextLength(int contextLength) {
+        this.REPORT_K_BEFORE_ERROR = contextLength;
+    }
+
 }

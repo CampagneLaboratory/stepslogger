@@ -73,6 +73,38 @@ public class FileStepsLoggerTest {
                 "ERROR Step 6 Status=1\n", reporter.summarize());
     }
 
+    @Test
+    public void testOmittedStepsToErrorK2() throws Exception {
+        FileStepsLogger slogger = new FileStepsLogger(testDirectory);
+
+        slogger.step("Ommit 1");
+        slogger.step("Ommit 2");
+        slogger.step("Ommit 3");
+        slogger.step("Step 1");
+        slogger.step("Step 2");
+        slogger.step("Step 3");
+        slogger.step("Step 4");
+        slogger.step("Step 5");
+        slogger.step("Step 6", 1);
+        slogger.step("Step 7");
+        slogger.step("Step 8");
+        slogger.step("Step 9");
+        slogger.step("Step 10", 1);
+        slogger.close();
+        StepsReportBuilder reporter = new StepsReportBuilder(testDirectory.listFiles()[0]);
+        reporter.setContextLength(2);
+        assertEquals("Error encountered: \n" +
+                "<omitting 6 steps>\n" +
+                "OK    Step 4\n" +
+                "OK    Step 5\n" +
+                "ERROR Step 6 Status=1\n" +
+                "<omitting 1 step>\n" +
+                "OK    Step 8\n" +
+                "OK    Step 9\n" +
+                "ERROR Step 10 Status=1\n"
+                , reporter.summarize());
+    }
+
     public void testProcessReturned() throws Exception {
 
     }
