@@ -20,7 +20,7 @@ public class FileStepsLogger implements StepsLogger {
     public FileStepsLogger(File logDirectory) {
         assert logDirectory.isDirectory();
         File logFile = new File(FilenameUtils.concat(logDirectory.getAbsolutePath(), String.format("log-%d.slog",
-                          new Date().getTime())));
+                new Date().getTime())));
 
         try {
             if (logFile.createNewFile()) {
@@ -31,7 +31,7 @@ public class FileStepsLogger implements StepsLogger {
         } catch (IOException e) {
             LOG.error("Unable to create the step logger file: " + logFile);
         }
-        assert writer!=null :"The writer must be created.";
+        assert writer != null : "The writer must be created.";
     }
 
     private StepsWriter writer;
@@ -49,8 +49,8 @@ public class FileStepsLogger implements StepsLogger {
 
     @Override
     public RedirectStreams stepProcess(String message, String command) {
-        latestRedirect = new RedirectStreams();
-        writer.appendStepProcess(message,command);
+        latestRedirect = new RedirectStreams(redirectBufferSize);
+        writer.appendStepProcess(message, command);
         return latestRedirect;
     }
 
@@ -78,12 +78,22 @@ public class FileStepsLogger implements StepsLogger {
      */
     public void step(String message, int statusCode) {
 
-            writer.append(message,statusCode);
+        writer.append(message, statusCode);
 
     }
 
     @Override
     public void close() throws IOException {
         writer.close();
+    }
+
+    private int redirectBufferSize=10000;
+
+    /**
+     * Set the maximum size of the process stderr and stdout capture buffers.
+     * @param size Size of the buffers in bytes.
+     */
+    public void setRedirectBufferSize(int size) {
+        redirectBufferSize = size;
     }
 }

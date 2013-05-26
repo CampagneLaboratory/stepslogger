@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ded8fffa-4925-4536-b73b-aaacf3e34797" name="Default" comment="">
+    <list default="true" id="ded8fffa-4925-4536-b73b-aaacf3e34797" name="Default" comment="Add ability to keep 1 maximum number of bytes for stdout and stderr. Use a circular array to discard older bytes.">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/stepslogger/util/CircularByteArrayOutputStream.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/stepslogger/FileStepsLogger.java" afterPath="$PROJECT_DIR$/src/main/java/stepslogger/FileStepsLogger.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/stepslogger/FileStepsLoggerTest.java" afterPath="$PROJECT_DIR$/src/test/java/stepslogger/FileStepsLoggerTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/stepslogger/StepsReportBuilder.java" afterPath="$PROJECT_DIR$/src/main/java/stepslogger/StepsReportBuilder.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/stepslogger/StepsWriter.java" afterPath="$PROJECT_DIR$/src/main/java/stepslogger/StepsWriter.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/stepslogger/RedirectStreams.java" afterPath="$PROJECT_DIR$/src/main/java/stepslogger/RedirectStreams.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="stepslogger.iws" />
@@ -15,16 +15,16 @@
     <file path="/StepLogger.java" changelist="ded8fffa-4925-4536-b73b-aaacf3e34797" time="1369491184788" ignored="false" />
     <file path="/fragment.java" changelist="ded8fffa-4925-4536-b73b-aaacf3e34797" time="1369582687629" ignored="false" />
     <file path="/StepsLogger.java" changelist="ded8fffa-4925-4536-b73b-aaacf3e34797" time="1369496451138" ignored="false" />
-    <file path="/RedirectStreams.java" changelist="ded8fffa-4925-4536-b73b-aaacf3e34797" time="1369495748915" ignored="false" />
+    <file path="/RedirectStreams.java" changelist="ded8fffa-4925-4536-b73b-aaacf3e34797" time="1369584689212" ignored="false" />
     <file path="/logformat.proto" changelist="ded8fffa-4925-4536-b73b-aaacf3e34797" time="1369492548530" ignored="false" />
     <file path="/StepsWriter.java" changelist="ded8fffa-4925-4536-b73b-aaacf3e34797" time="1369583660478" ignored="false" />
     <file path="$MAVEN_REPOSITORY$/org/campagnelab/gobyweb/serverside-dependencies/1.0.0/serverside-dependencies-1.0.0.pom" changelist="ded8fffa-4925-4536-b73b-aaacf3e34797" time="1369492435836" ignored="false" />
-    <file path="/FileStepsLogger.java" changelist="ded8fffa-4925-4536-b73b-aaacf3e34797" time="1369583647864" ignored="false" />
-    <file path="/FileStepsLoggerTest.java" changelist="ded8fffa-4925-4536-b73b-aaacf3e34797" time="1369583467628" ignored="false" />
+    <file path="/FileStepsLogger.java" changelist="ded8fffa-4925-4536-b73b-aaacf3e34797" time="1369584433522" ignored="false" />
+    <file path="/FileStepsLoggerTest.java" changelist="ded8fffa-4925-4536-b73b-aaacf3e34797" time="1369584454224" ignored="false" />
     <file path="$PROJECT_DIR$/target/test-classes/log4j.properties" changelist="ded8fffa-4925-4536-b73b-aaacf3e34797" time="1369497053294" ignored="false" />
     <file path="/StepsReportBuilder.java" changelist="ded8fffa-4925-4536-b73b-aaacf3e34797" time="1369583765863" ignored="false" />
     <file path="/LogFormat.proto" changelist="ded8fffa-4925-4536-b73b-aaacf3e34797" time="1369498250562" ignored="false" />
-    <file path="/Dummy.txt" changelist="ded8fffa-4925-4536-b73b-aaacf3e34797" time="1369583036762" ignored="false" />
+    <file path="/Dummy.txt" changelist="ded8fffa-4925-4536-b73b-aaacf3e34797" time="1369585332859" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,52 +77,37 @@
       </breakpoint>
     </breakpoint_any>
     <line_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true">
-      <breakpoint url="file://$PROJECT_DIR$/src/main/java/stepslogger/StepsReportBuilder.java" line="31" class="stepslogger.StepsReportBuilder" package="stepslogger">
-        <option name="ENABLED" value="true" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="REMOVE_AFTER_HIT" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="SUSPEND" value="true" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="true" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
-      </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/src/main/java/stepslogger/StepsReportBuilder.java" line="35" class="stepslogger.StepsReportBuilder" package="stepslogger">
-        <option name="ENABLED" value="true" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="REMOVE_AFTER_HIT" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="SUSPEND" value="true" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="true" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
-      </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/src/test/java/stepslogger/FileStepsLoggerTest.java" line="88" class="stepslogger.FileStepsLoggerTest" package="stepslogger">
-        <option name="ENABLED" value="true" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="REMOVE_AFTER_HIT" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="SUSPEND" value="true" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="true" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
-      </breakpoint>
       <breakpoint url="file://$PROJECT_DIR$/src/main/java/stepslogger/StepsWriter.java" line="94" class="stepslogger.StepsWriter" package="stepslogger">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/src/main/java/stepslogger/RedirectStreams.java" line="24" class="stepslogger.RedirectStreams" package="stepslogger">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/src/main/java/stepslogger/util/CircularByteArrayOutputStream.java" line="65" class="stepslogger.util.CircularByteArrayOutputStream" package="stepslogger.util">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -150,19 +135,10 @@
       <file leaf-file-name="StepsReportBuilder.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/stepslogger/StepsReportBuilder.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="80" column="45" selection-start="3005" selection-end="3005" vertical-scroll-proportion="0.0">
+            <state line="31" column="0" selection-start="1180" selection-end="1180" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="e#884#893#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Logformat.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/target/generated-sources/org/campagnelab/stepslogger/Logformat.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="775" column="18" selection-start="27255" selection-end="27255" vertical-scroll-proportion="0.0">
-              <folding />
             </state>
           </provider>
         </entry>
@@ -179,25 +155,38 @@
       <file leaf-file-name="FileStepsLogger.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/stepslogger/FileStepsLogger.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="52" column="27" selection-start="1564" selection-end="1564" vertical-scroll-proportion="0.0">
+            <state line="53" column="22" selection-start="1622" selection-end="1622" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LogFormat.proto" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/protobuf/LogFormat.proto">
+      <file leaf-file-name="RedirectStreams.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/stepslogger/RedirectStreams.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="27" selection-start="298" selection-end="305" vertical-scroll-proportion="0.0">
-              <folding />
+            <state line="24" column="0" selection-start="670" selection-end="670" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FileStepsLoggerTest.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="CircularByteArrayOutputStream.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/stepslogger/util/CircularByteArrayOutputStream.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="25" column="3" selection-start="837" selection-end="837" vertical-scroll-proportion="0.7376093">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FileStepsLoggerTest.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/stepslogger/FileStepsLoggerTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="130" column="36" selection-start="4922" selection-end="4922" vertical-scroll-proportion="0.78134114">
+            <state line="170" column="49" selection-start="6995" selection-end="6995" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -206,7 +195,7 @@
       <file leaf-file-name="StepsLogger.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/stepslogger/StepsLogger.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="34" selection-start="640" selection-end="640" vertical-scroll-proportion="0.0">
+            <state line="25" column="7" selection-start="640" selection-end="640" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -234,16 +223,18 @@
         <option value="$PROJECT_DIR$/src/main/java/stepslogger/StepLogger.java" />
         <option value="$PROJECT_DIR$/src/main/protobuf/logformat.proto" />
         <option value="$PROJECT_DIR$/target/generated-sources/org/campagnelab/stepslogger/Logformat.java" />
-        <option value="$PROJECT_DIR$/src/main/java/stepslogger/RedirectStreams.java" />
         <option value="$PROJECT_DIR$/src/main/java/stepslogger/StepsLogger.java" />
         <option value="$PROJECT_DIR$/src/test/resources/log4j.properties" />
         <option value="$PROJECT_DIR$/src/main/protobuf/LogFormat.proto" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/.idea/workspace.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/stepslogger/FileStepsLogger.java" />
         <option value="$PROJECT_DIR$/src/main/java/stepslogger/StepsWriter.java" />
         <option value="$PROJECT_DIR$/src/main/java/stepslogger/StepsReportBuilder.java" />
+        <option value="$PROJECT_DIR$/src/main/java/stepslogger/util/CircularByteOutputStream.java" />
+        <option value="$PROJECT_DIR$/src/main/java/stepslogger/RedirectStreams.java" />
+        <option value="$PROJECT_DIR$/src/main/java/stepslogger/FileStepsLogger.java" />
         <option value="$PROJECT_DIR$/src/test/java/stepslogger/FileStepsLoggerTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/stepslogger/util/CircularByteArrayOutputStream.java" />
       </list>
     </option>
   </component>
@@ -421,6 +412,50 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="stepslogger" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="stepslogger" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="stepslogger" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="stepslogger" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="util" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="stepslogger" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="stepslogger" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value=".idea" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -702,7 +737,11 @@
       <created>1369583043695</created>
       <updated>1369583043695</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Support processes that produce stdout and stderr.&#10;">
+      <created>1369584211638</created>
+      <updated>1369584211638</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -729,7 +768,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24958813" sideWeight="0.6712095" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32879046" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32879046" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -779,7 +818,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Summarize now handles several errors and omits intermediate steps not in context of errors." />
+    <option name="LAST_COMMIT_MESSAGE" value="Support processes that produce stdout and stderr.&#10;" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -795,6 +834,7 @@
     <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
     <MESSAGE value="Initial project backbone." />
     <MESSAGE value="Summarize now handles several errors and omits intermediate steps not in context of errors." />
+    <MESSAGE value="Support processes that produce stdout and stderr.&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -812,15 +852,6 @@
     <entry file="file://$PROJECT_DIR$/bin/protoc">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/stepslogger/RedirectStreams.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="3" selection-start="378" selection-end="457" vertical-scroll-proportion="0.19398907">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/resources/log4j.properties">
@@ -854,7 +885,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/stepslogger/StepsLogger.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="34" selection-start="640" selection-end="640" vertical-scroll-proportion="0.0">
+        <state line="25" column="7" selection-start="640" selection-end="640" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -862,13 +893,6 @@
     <entry file="file://$PROJECT_DIR$/src/main/protobuf/LogFormat.proto">
       <provider selected="true" editor-type-id="text-editor">
         <state line="17" column="27" selection-start="298" selection-end="305" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/stepslogger/FileStepsLogger.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="52" column="27" selection-start="1564" selection-end="1564" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -889,17 +913,42 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/stepslogger/StepsReportBuilder.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="80" column="45" selection-start="3005" selection-end="3005" vertical-scroll-proportion="0.0">
+        <state line="31" column="0" selection-start="1180" selection-end="1180" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="e#884#893#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/stepslogger/RedirectStreams.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="0" selection-start="670" selection-end="670" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/stepslogger/FileStepsLoggerTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="130" column="36" selection-start="4922" selection-end="4922" vertical-scroll-proportion="0.78134114">
+        <state line="170" column="49" selection-start="6995" selection-end="6995" vertical-scroll-proportion="0.0">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/stepslogger/FileStepsLogger.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="53" column="22" selection-start="1622" selection-end="1622" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/stepslogger/util/CircularByteArrayOutputStream.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="3" selection-start="837" selection-end="837" vertical-scroll-proportion="0.7376093">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

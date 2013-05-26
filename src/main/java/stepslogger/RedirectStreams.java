@@ -1,6 +1,7 @@
 package stepslogger;
 
 import org.apache.log4j.Logger;
+import stepslogger.util.CircularByteArrayOutputStream;
 
 import java.io.BufferedOutputStream;
 import java.io.ByteArrayOutputStream;
@@ -14,10 +15,20 @@ import java.io.UnsupportedEncodingException;
  *         Time: 10:08 AM
  */
 public class RedirectStreams {
-    private static final int BUFFER_SIZE = 1000000;
+
     private static final Logger LOG = Logger.getLogger(RedirectStreams.class);
-    private ByteArrayOutputStream bos = new ByteArrayOutputStream(BUFFER_SIZE);
-    private ByteArrayOutputStream bes = new ByteArrayOutputStream(BUFFER_SIZE);
+    private final CircularByteArrayOutputStream bos;
+    private final CircularByteArrayOutputStream bes;
+
+    public RedirectStreams(int redirectBufferSize) {
+        final int BUFFER_SIZE = redirectBufferSize;
+        bos = new CircularByteArrayOutputStream(BUFFER_SIZE);
+        bes = new CircularByteArrayOutputStream(BUFFER_SIZE);
+    }
+
+    public RedirectStreams() {
+        this(10000);
+    }
 
     public OutputStream getStandardOut() {
         return bos;
