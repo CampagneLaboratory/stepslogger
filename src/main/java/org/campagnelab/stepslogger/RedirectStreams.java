@@ -1,10 +1,8 @@
-package stepslogger;
+package org.campagnelab.stepslogger;
 
 import org.apache.log4j.Logger;
-import stepslogger.util.CircularByteArrayOutputStream;
+import org.campagnelab.stepslogger.util.CircularByteArrayOutputStream;
 
-import java.io.BufferedOutputStream;
-import java.io.ByteArrayOutputStream;
 import java.io.OutputStream;
 import java.io.UnsupportedEncodingException;
 

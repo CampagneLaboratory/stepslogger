@@ -8,11 +8,11 @@
         <version>1.0.3</version>
     </parent>
     <groupId>org.campagnelab</groupId>
-    <artifactId>stepslogger</artifactId>
+    <artifactId>org.campagnelab.stepslogger</artifactId>
     <version>1.0.0-SNAPSHOT</version>
     <packaging>jar</packaging>
 
-    <name>stepslogger</name>
+    <name>org.campagnelab.stepslogger</name>
     <url>http://maven.apache.org</url>
 
     <properties>
@@ -68,6 +68,27 @@
                 </configuration>
             </plugin>
             <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-shade-plugin</artifactId>
+                <version>2.0</version>
+                <executions>
+                    <execution>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>shade</goal>
+                        </goals>
+                        <configuration>
+                            <transformers>
+                                <transformer
+                                        implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
+                                    <mainClass>org.campagnelab.stepslogger.StepsLogTool</mainClass>
+                                </transformer>
+                            </transformers>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
                 <artifactId>maven-antrun-plugin</artifactId>
                 <executions>
                     <execution>
@@ -81,7 +102,7 @@
                                 <echo>PATH=${env.PATH}</echo>
                                 <exec executable="${project.basedir}/bin/protoc">
                                     <arg value="--java_out=target/generated-sources"/>
-                                    <arg value="src/main/protobuf/logformat.proto"/>
+                                    <arg value="src/main/protobuf/log_format.proto"/>
                                 </exec>
 
                             </tasks>
@@ -137,7 +158,7 @@
                     <outputDirectory>${project.build.directory}</outputDirectory>
                     <proguardInclude>${basedir}/proguard.conf</proguardInclude>
                     <options>
-                        <option>-keep public class org.campagnelab.gobyweb.**</option>
+                        <option>-keep public class org.campagnelab.stepslogger.**</option>
                         <option>-dontskipnonpubliclibraryclasses</option>
                         <option>-dontskipnonpubliclibraryclassmembers</option>
                     </options>

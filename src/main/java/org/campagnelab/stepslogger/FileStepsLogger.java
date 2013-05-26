@@ -1,10 +1,9 @@
-package stepslogger;
+package org.campagnelab.stepslogger;
 
 import org.apache.commons.io.FilenameUtils;
 import org.apache.log4j.Logger;
 
 import java.io.File;
-import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.Date;
@@ -47,7 +46,6 @@ public class FileStepsLogger implements StepsLogger {
 
     RedirectStreams latestRedirect;
 
-    @Override
     public RedirectStreams stepProcess(String message, String command) {
         latestRedirect = new RedirectStreams(redirectBufferSize);
         writer.appendStepProcess(message, command);
@@ -82,7 +80,7 @@ public class FileStepsLogger implements StepsLogger {
 
     }
 
-    @Override
+
     public void close() throws IOException {
         writer.close();
     }

@@ -1,4 +1,4 @@
-package stepslogger;
+package org.campagnelab.stepslogger;
 
 import org.apache.commons.io.FileUtils;
 import org.junit.Before;

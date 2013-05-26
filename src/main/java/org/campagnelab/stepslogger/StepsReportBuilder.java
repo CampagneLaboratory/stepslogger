@@ -1,10 +1,12 @@
-package stepslogger;
+package org.campagnelab.stepslogger;
 
-import com.google.protobuf.TextFormat;
-import org.campagnelab.stepslogger.Logformat;
+
+import campagnelab.stepslogger.LogFormat;
 
 import java.io.*;
+import java.text.DateFormat;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 /**
@@ -20,16 +22,16 @@ import java.util.List;
 public class StepsReportBuilder {
 
     private int REPORT_K_BEFORE_ERROR = 5;
-    private final Logformat.Log log;
+    private final LogFormat.Log log;
     private boolean errorEncountered;
     private List<Integer> stepsInErrorIndices = new ArrayList<Integer>();
     private int contextLength;
 
     public StepsReportBuilder(File logFile) throws IOException {
         assert logFile.isFile() : "directories are not supported at this time.";
-        log = Logformat.Log.parseDelimitedFrom(new FileInputStream(logFile));
+        log = LogFormat.Log.parseDelimitedFrom(new FileInputStream(logFile));
         int stepIndex = 0;
-        for (Logformat.Step step : log.getStepsList()) {
+        for (LogFormat.Step step : log.getStepsList()) {
 
             errorEncountered |= step.getError();
             if (step.getError()) {
@@ -38,6 +40,12 @@ public class StepsReportBuilder {
             stepIndex++;
         }
     }
+
+    public void setShowTime(boolean showTime) {
+        this.showTime = showTime;
+    }
+
+    private boolean showTime;
 
     public String summarize() {
         if (errorEncountered) {
@@ -68,9 +76,16 @@ public class StepsReportBuilder {
         }
     }
 
-    private void describe(Logformat.Step step, StringWriter writer) {
+    private void describe(LogFormat.Step step, StringWriter writer) {
 
         writer.append(step.getError() ? "ERROR " : "OK    ");
+        if (showTime) {
+            final DateFormat instance = DateFormat.getInstance();
+            final Date date = new Date();
+            date.setTime(step.getTimeStamp());
+            writer.append(instance.format(date));
+            writer.append(" ");
+        }
         writer.append(step.getTheMessage());
         if (step.hasStatusCode()) {
             writer.append(" Status=" + step.getStatusCode());

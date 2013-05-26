@@ -1,8 +1,8 @@
-package stepslogger;
+package org.campagnelab.stepslogger;
 
-import org.campagnelab.stepslogger.Logformat;
+import campagnelab.stepslogger.LogFormat;
+import campagnelab.stepslogger.LogFormat;
 
-import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.Date;
@@ -14,9 +14,9 @@ import java.util.Date;
  */
 public class StepsWriter {
 
-    private Logformat.Log.Builder log = Logformat.Log.newBuilder();
+    private LogFormat.Log.Builder log = LogFormat.Log.newBuilder();
     private FileOutputStream fos;
-    private Logformat.Step.Builder latestStep;
+    private LogFormat.Step.Builder latestStep;
 
     public StepsWriter(FileOutputStream stream) {
         fos = stream;
@@ -27,8 +27,8 @@ public class StepsWriter {
      *
      * @param message
      */
-    public Logformat.Step.Builder newStep(String message) {
-        Logformat.Step.Builder step = prepareNextStep();
+    public LogFormat.Step.Builder newStep(String message) {
+        LogFormat.Step.Builder step = prepareNextStep();
         Date currentTime = new Date();
         step.setTimeStamp(currentTime.getTime());
         step.setTheMessage(message);
@@ -41,24 +41,24 @@ public class StepsWriter {
      *
      * @param message
      */
-    public Logformat.Step.Builder newStep(String message, int statusCode) {
+    public LogFormat.Step.Builder newStep(String message, int statusCode) {
         return newStep(message).setStatusCode(statusCode);
     }
 
-    private Logformat.Step.Builder prepareNextStep() {
-        final Logformat.Step.Builder builder = Logformat.Step.newBuilder();
+    private LogFormat.Step.Builder prepareNextStep() {
+        final LogFormat.Step.Builder builder = LogFormat.Step.newBuilder();
         latestStep = builder;
-        Logformat.Step.Builder step = builder;
+        LogFormat.Step.Builder step = builder;
         return step;
     }
 
 
-    public Logformat.Step.Builder error(String message, int statusCode) {
+    public LogFormat.Step.Builder error(String message, int statusCode) {
         return newStep(message, statusCode);
 
     }
 
-    public void append(Logformat.Step.Builder step) {
+    public void append(LogFormat.Step.Builder step) {
         if (!step.hasError()) {
             if (step.hasStatusCode()) {
 
@@ -83,7 +83,7 @@ public class StepsWriter {
     public void observe(String name, String payLoad) {
         assert latestStep != null;
 
-        Logformat.ObjectPayLoad.Builder observedBuilder = Logformat.ObjectPayLoad.newBuilder();
+        LogFormat.ObjectPayLoad.Builder observedBuilder = LogFormat.ObjectPayLoad.newBuilder();
         observedBuilder.setObjectName(name);
         observedBuilder.setStringValue(payLoad);
         latestStep.addObservedObjects(observedBuilder);

@@ -1,6 +1,6 @@
-package stepslogger;
+package org.campagnelab.stepslogger;
 
-option java_package = "org.campagnelab.stepslogger";
+option java_package = "campagnelab.stepslogger";
 
 message Log {
     repeated Step steps = 1;

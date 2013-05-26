@@ -1,4 +1,4 @@
-package stepslogger;
+package org.campagnelab.stepslogger;
 
 import com.martiansoftware.jsap.JSAP;
 import com.martiansoftware.jsap.JSAPResult;
@@ -13,11 +13,11 @@ import java.io.IOException;
  *         Date: 5/26/13
  *         Time: 12:26 PM
  */
-public class ViewStepsLog {
+public class StepsLogTool {
 
 
     public static void main(String[] args) throws Exception {
-        JSAP jsap = new JSAP(ViewStepsLog.class.getResource("ViewStepsLog.jsap"));
+        JSAP jsap = new JSAP(StepsLogTool.class.getResource("StepsLogTool.jsap"));
 
         JSAPResult config = jsap.parse(args);
 
@@ -36,7 +36,7 @@ public class ViewStepsLog {
 
             System.err.println();
             System.err.println("Usage: java "
-                    + ViewStepsLog.class.getName());
+                    + StepsLogTool.class.getName());
             System.err.println("                "
                     + jsap.getUsage());
             System.err.println();
@@ -44,7 +44,7 @@ public class ViewStepsLog {
             System.exit(1);
         }
         File logFile = config.getFile("log-file");
-        ViewStepsLog processor = new ViewStepsLog();
+        StepsLogTool processor = new StepsLogTool();
         processor.process(config, logFile);
         System.exit(0);
     }
@@ -55,6 +55,7 @@ public class ViewStepsLog {
 
     private void process(JSAPResult config, File logFile) throws IOException {
         StepsReportBuilder reporter = new StepsReportBuilder(logFile);
+        reporter.setShowTime(true);
         System.out.println(reporter.summarize());
 
     }

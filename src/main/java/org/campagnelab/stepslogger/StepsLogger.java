@@ -1,4 +1,4 @@
-package stepslogger;
+package org.campagnelab.stepslogger;
 
 import java.io.IOException;
 

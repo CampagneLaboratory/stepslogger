@@ -1,4 +1,4 @@
-package stepslogger.util;
+package org.campagnelab.stepslogger.util;
 
 /**
  * @author Fabien Campagne
