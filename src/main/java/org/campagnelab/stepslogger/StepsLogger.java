@@ -1,5 +1,6 @@
 package org.campagnelab.stepslogger;
 
+import java.io.Closeable;
 import java.io.IOException;
 
 /**
@@ -7,7 +8,7 @@ import java.io.IOException;
  *         Date: 5/25/13
  *         Time: 10:07 AM
  */
-public interface StepsLogger {
+public interface StepsLogger extends Closeable {
     /**
      * Record that a step executed, successfully or not.
      *

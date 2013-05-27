@@ -7,18 +7,18 @@
             <help>Print help message.</help>
         </switch>
         <flaggedOption>
-                    <id>action</id>
-                    <stringParser>
-                        <classname>StringStringParser</classname>
-                    </stringParser>
-                    <required>true</required>
-                    <longFlag>action</longFlag>
-                    <defaults>
-                        <string>view</string>
-                    </defaults>
-                    <help>The action to execute: view-> view a log file.
-                    </help>
-                </flaggedOption>
+            <id>action</id>
+            <stringParser>
+                <classname>StringStringParser</classname>
+            </stringParser>
+            <required>true</required>
+            <longFlag>action</longFlag>
+            <defaults>
+                <string>view</string>
+            </defaults>
+            <help>The action to execute: view-> view a log file.
+            </help>
+        </flaggedOption>
         <flaggedOption>
             <id>log-file</id>
             <stringParser>
