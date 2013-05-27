@@ -16,7 +16,7 @@
             <defaults>
                 <string>view</string>
             </defaults>
-            <help>The action to execute: view-> view a log file.
+            <help>The action to execute: view-> view a log file. verbose, show all steps even when successful.
             </help>
         </flaggedOption>
         <flaggedOption>

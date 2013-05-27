@@ -52,7 +52,7 @@ public class StepsLogTool {
     private static boolean hasError(JSAPResult config) {
         boolean OK = config.userSpecified("log-file");
         final String action = config.getString("action");
-        OK &= "view".equals(action); //|| "log".equals(action);
+        OK &= "view".equals(action)|| "verbose-view".equals(action);
         return !OK;
     }
 
@@ -62,6 +62,10 @@ public class StepsLogTool {
         final String action = config.getString("action");
         if ("view".equals(action)) {
             System.out.println(reporter.summarize());
-        }
+        }else
+        if ("verbose-view".equals(action)) {
+
+                    System.out.println(reporter.vervoseOutput());
+                }
     }
 }

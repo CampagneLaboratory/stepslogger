@@ -123,4 +123,15 @@ public class StepsReportBuilder {
         this.REPORT_K_BEFORE_ERROR = contextLength;
     }
 
+    public String vervoseOutput() {
+        StringWriter stringBuffer = new StringWriter();
+
+        for (LogFormat.Step step : log.getStepsList()) {
+
+            describe(step, stringBuffer);
+        }
+        return stringBuffer.toString();
+    }
+
 }
+
