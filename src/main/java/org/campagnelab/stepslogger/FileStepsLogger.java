@@ -14,7 +14,7 @@ import java.util.Date;
  *         Time: 10:00 AM
  */
 public class FileStepsLogger implements StepsLogger {
-    private static final Logger LOG = Logger.getLogger(RedirectStreams.class);
+    private static final Logger LOG = Logger.getLogger(FileStepsLogger.class);
 
     public FileStepsLogger(File logDirectory) {
         assert logDirectory.isDirectory();
@@ -87,6 +87,7 @@ public class FileStepsLogger implements StepsLogger {
 
 
     public void close() throws IOException {
+        writer.flush();
         writer.close();
     }
 

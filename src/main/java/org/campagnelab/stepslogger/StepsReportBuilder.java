@@ -2,6 +2,7 @@ package org.campagnelab.stepslogger;
 
 
 import campagnelab.stepslogger.LogFormat;
+import org.apache.log4j.Logger;
 
 import java.io.*;
 import java.text.DateFormat;
@@ -20,6 +21,8 @@ import java.util.List;
  *         Time: 11:59 AM
  */
 public class StepsReportBuilder {
+    private static final Logger LOG = Logger.getLogger(StepsReportBuilder.class);
+
 
     private int REPORT_K_BEFORE_ERROR = 5;
     private final LogFormat.Log log;
@@ -30,6 +33,10 @@ public class StepsReportBuilder {
     public StepsReportBuilder(File logFile) throws IOException {
         assert logFile.isFile() : "directories are not supported at this time.";
         log = LogFormat.Log.parseDelimitedFrom(new FileInputStream(logFile));
+        if (log==null) {
+            LOG.error("Unable to parse logFile: "+logFile.getCanonicalPath());
+            return;
+        }
         int stepIndex = 0;
         for (LogFormat.Step step : log.getStepsList()) {
 

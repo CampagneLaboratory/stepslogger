@@ -16,6 +16,13 @@ import java.io.IOException;
 public class StepsLogTool {
 
 
+    public static void parseJSap(String[] args) throws Exception {
+        JSAP jsap = new JSAP(StepsLogTool.class.getResource("StepsLogTool.jsap"));
+
+        JSAPResult config = jsap.parse(args);
+
+    }
+
     public static void main(String[] args) throws Exception {
         JSAP jsap = new JSAP(StepsLogTool.class.getResource("StepsLogTool.jsap"));
 
@@ -43,29 +50,32 @@ public class StepsLogTool {
 
             System.exit(1);
         }
-        File logFile = config.getFile("log-file");
+        File[] logFiles = config.getFileArray("log-file");
         StepsLogTool processor = new StepsLogTool();
-        processor.process(config, logFile);
+        processor.process(config, logFiles);
         System.exit(0);
     }
 
     private static boolean hasError(JSAPResult config) {
         boolean OK = config.userSpecified("log-file");
         final String action = config.getString("action");
-        OK &= "view".equals(action)|| "verbose-view".equals(action);
+        OK &= "view".equals(action) || "verbose-view".equals(action);
         return !OK;
     }
 
-    private void process(JSAPResult config, File logFile) throws IOException {
-        StepsReportBuilder reporter = new StepsReportBuilder(logFile);
-        reporter.setShowTime(true);
-        final String action = config.getString("action");
-        if ("view".equals(action)) {
-            System.out.println(reporter.summarize());
-        }else
-        if ("verbose-view".equals(action)) {
+    private void process(JSAPResult config, File[] logFiles) throws IOException {
+        for (File logFile : logFiles) {
+            System.out.println("Viewing "+logFile);
+            StepsReportBuilder reporter = new StepsReportBuilder(logFile);
+            reporter.setShowTime(true);
+            final String action = config.getString("action");
+            if ("view".equals(action)) {
+                System.out.println(reporter.summarize());
+            } else if ("verbose-view".equals(action)) {
 
-                    System.out.println(reporter.vervoseOutput());
-                }
+                System.out.println(reporter.vervoseOutput());
+            }
+            System.out.println("------------------------------ (end of "+logFile+")");
+        }
     }
 }

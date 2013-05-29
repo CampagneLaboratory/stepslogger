@@ -19,7 +19,10 @@
             <help>The action to execute: view-> view a log file. verbose, show all steps even when successful.
             </help>
         </flaggedOption>
-        <flaggedOption>
+        <unflaggedOption>
+
+            <required>true</required>
+            <greedy>true</greedy>
             <id>log-file</id>
             <stringParser>
                 <classname>FileStringParser</classname>
@@ -36,12 +39,8 @@
                 </properties>
             </stringParser>
 
-            <required>true</required>
-
-            <shortFlag>i</shortFlag>
-            <longFlag>log-file</longFlag>
-            <help>The log-file to visualize.</help>
-        </flaggedOption>
+            <help>The log-file(s) to visualize.</help>
+        </unflaggedOption>
 
 
     </parameters>

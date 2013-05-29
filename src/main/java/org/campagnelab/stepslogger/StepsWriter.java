@@ -102,6 +102,7 @@ public class StepsWriter {
     public void flush() {
         if (latestStep != null) {
             append(latestStep);
+            latestStep=null;
         }
     }
 

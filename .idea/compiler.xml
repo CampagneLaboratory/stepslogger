@@ -25,10 +25,12 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
+        <module name="org.campagnelab.stepslogger" />
         <module name="stepslogger" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="org.campagnelab.stepslogger" target="1.6" />
       <module name="stepslogger" target="1.6" />
     </bytecodeTargetLevel>
   </component>
