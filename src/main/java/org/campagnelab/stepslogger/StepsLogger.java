@@ -2,7 +2,7 @@ package org.campagnelab.stepslogger;
 
 import java.io.Closeable;
 import java.io.IOException;
-
+import java.io.Closeable;
 /**
  * @author Fabien Campagne
  *         Date: 5/25/13
