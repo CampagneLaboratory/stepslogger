@@ -17,7 +17,7 @@ public class FileStepsLogger implements StepsLogger {
     private static final Logger LOG = Logger.getLogger(FileStepsLogger.class);
 
     public FileStepsLogger(File logDirectory) {
-        assert logDirectory.isDirectory();
+        assert logDirectory.isDirectory(): "parameter must be a directory.";
         File logFile = new File(FilenameUtils.concat(logDirectory.getAbsolutePath(), String.format("log-%d.slog",
                 new Date().getTime())));
 
