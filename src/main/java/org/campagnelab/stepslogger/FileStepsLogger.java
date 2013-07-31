@@ -17,13 +17,15 @@ public class FileStepsLogger implements StepsLogger {
     private static final Logger LOG = Logger.getLogger(FileStepsLogger.class);
 
     public FileStepsLogger(File logDirectory) {
-        assert logDirectory.isDirectory(): "parameter must be a directory.";
-        File logFile = new File(FilenameUtils.concat(logDirectory.getAbsolutePath(), String.format("log-%d.slog",
-                new Date().getTime())));
-
+        assert logDirectory.isDirectory() : "parameter must be a directory.";
+        String logFilename = String.format("log-%d.slog",
+                new Date().getTime());
+        File logFile = new File(FilenameUtils.concat(logDirectory.getAbsolutePath(), logFilename));
+        LOG.info("Creating stepslogger logFile " + logFile);
         try {
             if (logFile.createNewFile()) {
                 writer = new StepsWriter(new FileOutputStream(logFile));
+
             } else {
                 LOG.error("Unable to create the step logger file: " + logFile);
             }
@@ -46,7 +48,7 @@ public class FileStepsLogger implements StepsLogger {
 
     @Override
     public void error(String message) {
-        step(message,1);
+        step(message, 1);
     }
 
     RedirectStreams latestRedirect;
@@ -91,10 +93,11 @@ public class FileStepsLogger implements StepsLogger {
         writer.close();
     }
 
-    private int redirectBufferSize=10000;
+    private int redirectBufferSize = 10000;
 
     /**
      * Set the maximum size of the process stderr and stdout capture buffers.
+     *
      * @param size Size of the buffers in bytes.
      */
     public void setRedirectBufferSize(int size) {
