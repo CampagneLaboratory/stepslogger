@@ -25,18 +25,12 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
-        <module name="stepslogger" />
-      </profile>
-      <profile default="false" name="Annotation profile for org.campagnelab.stepslogger" enabled="true">
-        <sourceOutputDir name="target/generated-sources/annotations" />
-        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
-        <outputRelativeToContentRoot value="true" />
-        <processorPath useClasspath="true" />
         <module name="org.campagnelab.stepslogger" />
+        <module name="stepslogger" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="org.campagnelab.stepslogger" target="1.7" />
+      <module name="org.campagnelab.stepslogger" target="1.6" />
       <module name="stepslogger" target="1.6" />
     </bytecodeTargetLevel>
   </component>

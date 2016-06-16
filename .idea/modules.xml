@@ -3,8 +3,6 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/org.campagnelab.stepslogger.iml" filepath="$PROJECT_DIR$/org.campagnelab.stepslogger.iml" />
-      <module fileurl="file://$PROJECT_DIR$/stepslogger.iml" filepath="$PROJECT_DIR$/stepslogger.iml" />
     </modules>
   </component>
 </project>
-
