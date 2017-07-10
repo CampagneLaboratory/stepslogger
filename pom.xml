@@ -207,7 +207,7 @@
         <dependency>
             <groupId>org.campagnelab.gobyweb</groupId>
             <artifactId>serverside-dependencies</artifactId>
-            <version>1.0.14</version>
+            <version>1.0.16</version>
             <classifier>full</classifier>
         </dependency>
 
